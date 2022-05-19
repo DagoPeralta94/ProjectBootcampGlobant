@@ -22,7 +22,6 @@
         android:layout_marginRight="40dp"
         android:layout_marginBottom="10dp"
         android:text="@string/txtv_user"
-        android:inputType="textEmailAddress"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -32,6 +31,8 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="15dp"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
         android:background="@color/white" />
 
     <TextView
@@ -133,6 +134,6 @@
         android:gravity="center"
         android:text="@string/invited"
         android:textSize="15sp"
-        android:textStyle="italic" />
+        android:textStyle="bold" />
 
 </LinearLayout>
