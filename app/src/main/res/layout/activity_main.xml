@@ -13,7 +13,8 @@
         android:layout_height="150dp"
         android:layout_marginTop="70dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/logo_imdb" />
+        android:src="@drawable/logo_imdb"
+        android:contentDescription="Logo IMDb" />
 
     <TextView
         android:layout_width="match_parent"

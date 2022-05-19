@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginHorizontal="40dp"
     android:orientation="vertical"
     tools:context=".Register">
 
@@ -11,15 +12,12 @@
         android:layout_width="130dp"
         android:layout_height="70dp"
         android:layout_marginTop="35dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/logo_imdb2"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginBottom="10dp"
         android:text="Crear una cuenta"
         android:textStyle="bold"
@@ -29,8 +27,6 @@
     android:id="@+id/textInputLayoutName"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginRight="40dp"
-    android:layout_marginLeft="40dp"
     android:hint="Nombre"
     android:layout_marginBottom="10dp">
 
@@ -44,8 +40,6 @@
         android:id="@+id/textInputLayoutEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginBottom="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -59,8 +53,6 @@
         android:id="@+id/textInputLayoutPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginBottom="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -73,8 +65,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginBottom="10dp"
         android:text="La contraseña debe contener 8 caracteres"
         android:textStyle="italic"
@@ -83,7 +73,5 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
         android:text="Aceptar"/>
 </LinearLayout>
