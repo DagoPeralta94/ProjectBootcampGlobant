@@ -4,9 +4,9 @@
     <string name="txtv_password">Contraseña</string>
     <string name="txtv_forget_pass">¿Olvidaste la contraseña?</string>
     <string name="login">Login</string>
-    <string name="alternative_login">O podes ingresar con</string>
-    <string name="no_account">¿No tenes cuenta?</string>
+    <string name="alternative_login">Ó podes ingresar con</string>
+    <string name="no_account">¿No tenes cuenta? <b>Regístrate</b></string>
     <string name="register">Regístrate</string>
-    <string name="invited">Continuar como invitado</string>
+    <string name="invited"><b>Continuar como invitado</b></string>
 
 </resources>
