@@ -15,10 +15,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.txtRegister.setOnClickListener { goingToRegister() }
+        binding.login1.setOnClickListener { goingToNavigation() }
 
     }
     private fun goingToRegister(){
         val intent = Intent(this, Register::class.java).apply {
+
+        }
+        startActivity(intent)
+    }
+
+    private fun goingToNavigation(){
+        val intent = Intent(this, NavigationActivity::class.java).apply {
 
         }
         startActivity(intent)
