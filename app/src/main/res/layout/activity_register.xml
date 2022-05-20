@@ -60,21 +60,15 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:hint="Contraseña"
-        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24">
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+        app:counterEnabled="true"
+        app:helperText="La contraseña debe contener 8 caracteres*">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="La contraseña debe contener 8 caracteres"
-        android:textSize="15sp"
-        android:textStyle="italic" />
 
     <Button
         android:layout_width="match_parent"
