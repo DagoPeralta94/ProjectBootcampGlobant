@@ -11,4 +11,11 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="logo_de_imdb">Logo de IMDb</string>
+    <string name="crear_una_cuenta">Crear una cuenta</string>
+    <string name="name_in_layout">Nombre</string>
+    <string name="email_in_layout">Correo electrónico</string>
+    <string name="password_in_layout">Contraseña</string>
+    <string name="btn_acept">Aceptar</string>
+    <string name="txt_password_required">La contraseña debe contener 8 caracteres*</string>
 </resources>

@@ -13,13 +13,14 @@
         android:layout_height="70dp"
         android:layout_marginTop="35dp"
         android:layout_marginBottom="20dp"
+        android:contentDescription="@string/logo_de_imdb"
         android:src="@drawable/logo_imdb2" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Crear una cuenta"
+        android:text="@string/crear_una_cuenta"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -29,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:hint="Nombre"
+        android:hint="@string/name_in_layout"
         app:startIconDrawable="@drawable/ic_baseline_person_24">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -44,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:hint="Correo electrónico"
+        android:hint="@string/email_in_layout"
         app:startIconDrawable="@drawable/ic_baseline_mail_outline_24">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -59,9 +60,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:hint="Contraseña"
+        android:hint="@string/password_in_layout"
         app:counterEnabled="true"
-        app:helperText="La contraseña debe contener 8 caracteres*"
+        app:helperText="@string/txt_password_required"
         app:startIconDrawable="@drawable/ic_baseline_vpn_key_24">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -73,5 +74,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aceptar" />
+        android:text="@string/btn_acept" />
+
 </LinearLayout>
