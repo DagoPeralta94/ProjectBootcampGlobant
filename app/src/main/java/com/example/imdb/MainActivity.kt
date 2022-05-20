@@ -3,6 +3,7 @@ package com.example.imdb
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.bumptech.glide.Glide
 import com.example.imdb.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +17,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.txtRegister.setOnClickListener { goingToRegister() }
         binding.login1.setOnClickListener { goingToNavigation() }
+
+        Glide.with(this)
+            .load(R.drawable.logo_apple)
+            .into(binding.imApple)
+        Glide.with(this)
+            .load(R.drawable.logo_facebook)
+            .into(binding.imFacebook)
+        Glide.with(this)
+            .load(R.drawable.logo_google)
+            .into(binding.imGoogle)
 
     }
     private fun goingToRegister(){

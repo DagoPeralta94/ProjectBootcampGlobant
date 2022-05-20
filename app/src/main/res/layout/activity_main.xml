@@ -13,8 +13,8 @@
         android:layout_height="150dp"
         android:layout_marginTop="70dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/logo_imdb"
-        android:contentDescription="Logo IMDb" />
+        android:contentDescription="Logo IMDb"
+        android:src="@drawable/logo_imdb" />
 
     <TextView
         android:layout_width="match_parent"
@@ -32,9 +32,9 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="15dp"
+        android:background="@color/white"
         android:inputType="textEmailAddress"
-        android:singleLine="true"
-        android:background="@color/white" />
+        android:singleLine="true" />
 
     <TextView
         android:layout_width="match_parent"
@@ -88,42 +88,40 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginBottom="15dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/im_apple"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:layout_marginLeft="100dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/logo_apple" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/im_facebook"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
             android:src="@drawable/logo_facebook" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/im_google"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:layout_marginRight="100dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/logo_google" />
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/txtRegister"
-        android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
         android:gravity="center"
         android:text="@string/no_account"
         android:textSize="15sp"
