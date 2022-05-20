@@ -21,10 +21,11 @@ class MainActivity : AppCompatActivity() {
         binding.txtRegister.setOnClickListener { goingToRegister() }
         binding.login1.setOnClickListener { goingToNavigation() }
 
-        Glide.with(this)
+        /* Glide.with(this)
             .load(R.drawable.logo_google)
             .apply(RequestOptions.circleCropTransform())
-            .into(binding.imGoogle)
+            .into(binding.imGoogle) */
+
 
     }
     private fun goingToRegister(){

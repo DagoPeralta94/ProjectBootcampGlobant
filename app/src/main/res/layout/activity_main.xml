@@ -100,6 +100,7 @@
             app:lottie_url="https://assets4.lottiefiles.com/private_files/lf30_Qe4WLa.json"
             app:lottie_loop="true"
             app:lottie_autoPlay="true"/>
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/im_facebook"
             android:layout_width="48dp"
@@ -109,11 +110,13 @@
             app:lottie_loop="true"
             app:lottie_autoPlay="true"/>
 
-        <ImageView
+        <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/im_google"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/logo_google" />
+            app:lottie_url="https://assets6.lottiefiles.com/packages/lf20_st5p8lov.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
 
     </LinearLayout>
 
