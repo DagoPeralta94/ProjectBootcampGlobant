@@ -28,7 +28,8 @@
             android:layout_marginBottom="15dp"
             android:hint="@string/txtv_user"
             android:inputType="textEmailAddress"
-            android:singleLine="true">
+            android:singleLine="true"
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -42,7 +43,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:hint="@string/txtv_password"
-            app:helperText="@string/txtv_forget_pass">
+            app:endIconMode="password_toggle"
+            app:helperText="@string/txtv_forget_pass"
+            app:startIconDrawable="@drawable/ic_baseline_vpn_key_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
