@@ -18,7 +18,8 @@
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
 
-    <style name="RegisterTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="RegisterTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
 
-    </style>
+    <style name="NavigationTheme" parent="Theme.MaterialComponents.DayNight"/>
+
 </resources>
