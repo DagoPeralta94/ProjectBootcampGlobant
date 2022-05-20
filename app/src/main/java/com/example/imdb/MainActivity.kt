@@ -21,15 +21,6 @@ class MainActivity : AppCompatActivity() {
         binding.txtRegister.setOnClickListener { goingToRegister() }
         binding.login1.setOnClickListener { goingToNavigation() }
 
-
-        Glide.with(this)
-            .load(R.drawable.logo_apple)
-            .apply(RequestOptions.circleCropTransform())
-            .into(binding.imApple)
-        Glide.with(this)
-            .load(R.drawable.logo_facebook)
-            .apply(RequestOptions.circleCropTransform())
-            .into(binding.imFacebook)
         Glide.with(this)
             .load(R.drawable.logo_google)
             .apply(RequestOptions.circleCropTransform())

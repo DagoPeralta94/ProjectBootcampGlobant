@@ -93,18 +93,21 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ImageView
+        <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/im_apple"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/logo_apple" />
-
-        <ImageView
+            app:lottie_url="https://assets4.lottiefiles.com/private_files/lf30_Qe4WLa.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+        <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/im_facebook"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginHorizontal="10dp"
-            android:src="@drawable/logo_facebook" />
+            app:lottie_url="https://assets2.lottiefiles.com/private_files/lf30_9Vev45.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
 
         <ImageView
             android:id="@+id/im_google"
