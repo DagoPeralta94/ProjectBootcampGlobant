@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.MultiTransformation
 import com.bumptech.glide.request.RequestOptions
 import com.example.imdb.databinding.ActivityMainBinding
+import com.example.imdb.databinding.ActivityRegisterBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding =  ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.txtRegister.setOnClickListener { goingToRegister() }
@@ -26,16 +27,16 @@ class MainActivity : AppCompatActivity() {
             .apply(RequestOptions.circleCropTransform())
             .into(binding.imGoogle) */
 
-
     }
-    private fun goingToRegister(){
+
+    private fun goingToRegister() {
         val intent = Intent(this, Register::class.java).apply {
 
         }
         startActivity(intent)
     }
 
-    private fun goingToNavigation(){
+    private fun goingToNavigation() {
         val intent = Intent(this, NavigationActivity::class.java).apply {
 
         }
