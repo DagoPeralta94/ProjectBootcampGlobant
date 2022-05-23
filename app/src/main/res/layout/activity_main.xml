@@ -118,7 +118,8 @@
             android:gravity="center"
             android:text="@string/no_account"
             android:textSize="15sp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:focusable="true" />
 
         <TextView
             android:layout_width="match_parent"
