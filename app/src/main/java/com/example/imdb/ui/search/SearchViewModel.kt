@@ -11,3 +11,5 @@ class SearchViewModel : ViewModel() {
     }
     val text: LiveData<String> = _text
 }
+
+data class MoviesList(val name: String, val age: String, val description: String, val photo: String)
