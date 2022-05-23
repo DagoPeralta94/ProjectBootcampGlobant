@@ -1,4 +1,4 @@
-package com.example.imdb.ui.notifications
+package com.example.imdb.ui.play
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
