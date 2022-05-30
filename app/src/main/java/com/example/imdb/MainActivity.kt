@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun goingToNavigation() {
-        val intent = Intent(this, SearchActivity::class.java).apply {
+        val intent = Intent(this, HomeDashboard::class.java).apply {
 
         }
         startActivity(intent)

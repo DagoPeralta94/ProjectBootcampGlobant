@@ -3,17 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/drawable/selector.xml" value="0.224" />
         <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/drawable/splash_background.xml" value="0.125" />
+        <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/activity_home_dashboard.xml" value="0.17905982905982906" />
         <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/activity_navigation.xml" value="0.2609375" />
+        <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/activity_play_dashboard.xml" value="0.17905982905982906" />
+        <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/activity_profile_dashboard.xml" value="0.17905982905982906" />
         <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/activity_register.xml" value="0.25" />
-        <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/activity_search.xml" value="0.17905982905982906" />
+        <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/activity_search.xml" value="0.1" />
         <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/fragment_dashboard.xml" value="0.13034188034188035" />
         <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/fragment_home.xml" value="0.13034188034188035" />
         <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
         <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/fragment_profile.xml" value="0.13675213675213677" />
         <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/layout/item_movies.xml" value="0.33" />
         <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/DagobertoPeralta/AndroidStudioProjects/IMDb/app/src/main/res/menu/menu.xml" value="0.1782051282051282" />
       </map>
     </option>
   </component>
