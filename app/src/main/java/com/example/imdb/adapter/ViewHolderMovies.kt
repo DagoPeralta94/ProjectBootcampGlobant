@@ -4,9 +4,9 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.imdb.ModelDataClass
 import com.example.imdb.R
-
 
 class ViewHolderMovies(view: View) : RecyclerView.ViewHolder(view){
 
@@ -17,7 +17,7 @@ class ViewHolderMovies(view: View) : RecyclerView.ViewHolder(view){
 
     fun render(listModel: ModelDataClass){
 
-        // photoUrl.text = listModel.urlMovie
+        Glide.with(photoUrl.context).load(listModel.urlPhoto).into(photoUrl)
         titleMovie.text = listModel.titleMovie
         movieAge.text = listModel.dateMovie
         movieDescription.text = listModel.descriptionMovie
