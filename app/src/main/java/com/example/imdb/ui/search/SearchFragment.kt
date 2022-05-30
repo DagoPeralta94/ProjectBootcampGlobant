@@ -8,8 +8,11 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.imdb.databinding.FragmentDashboardBinding
+import com.example.imdb.ui.search.adapter.MoviesAdapter
 
 class SearchFragment : Fragment() {
 
@@ -19,12 +22,18 @@ class SearchFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+    fun initRecyclerView(){
+        binding.recView.layoutManager = StaggeredGridLayoutManager(3, LinearLayoutManager.HORIZONTAL)
+        binding.recView.adapter = MoviesAdapter(MoviesProvider.moviesList)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ) : View {
+
+        initRecyclerView()
 
         val dashboardViewModel =
             ViewModelProvider(this).get(SearchViewModel::class.java)
@@ -36,11 +45,14 @@ class SearchFragment : Fragment() {
         dashboardViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
         return root
+
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
 }
