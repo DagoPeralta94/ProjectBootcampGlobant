@@ -15,7 +15,6 @@ class NavigationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityNavigationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -26,10 +25,18 @@ class NavigationActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_search, R.id.navigation_play, R.id.navigation_profile
+                R.id.navigation_home,
+                R.id.navigation_search,
+                R.id.navigation_play,
+                R.id.navigation_profile
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+/*    private fun initReciclerView(){
+        val recyclerView = findViewById<RecyclerView>(R.id.recView)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = MoviesAdapter(MoviesProvider.moviesList)
+    } */
 }

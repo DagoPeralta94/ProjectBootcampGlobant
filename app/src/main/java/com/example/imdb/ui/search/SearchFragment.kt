@@ -1,35 +1,39 @@
-package com.example.imdb.ui.notifications
+package com.example.imdb.ui.search
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.imdb.databinding.FragmentNotificationsBinding
+import androidx.recyclerview.widget.RecyclerView
+import com.example.imdb.databinding.FragmentDashboardBinding
 
-class NotificationsFragment : Fragment() {
+class SearchFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentDashboardBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        val notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+    ) : View {
 
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        val dashboardViewModel =
+            ViewModelProvider(this)[SearchViewModel::class.java]
+
+        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textSearch
+        dashboardViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

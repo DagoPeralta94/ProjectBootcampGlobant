@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.imdb.databinding.FragmentProfileBinding
-import com.example.imdb.ui.notifications.ProfileViewModel
+import com.example.imdb.ui.play.ProfileViewModel
 
 class ProfileFragment : Fragment() {
 

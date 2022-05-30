@@ -13,18 +13,21 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    
+
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
 
     <style name="RegisterTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-    <item name="colorPrimary">@color/gray_imdb2</item>
-    <item name="colorPrimaryVariant">@color/gray_imdb</item>
+        <item name="colorPrimary">@color/gray_imdb2</item>
+        <item name="colorPrimaryVariant">@color/gray_imdb</item>
 
-    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     </style>
 
-    <style name="NavigationTheme" parent="Theme.MaterialComponents.DayNight"/>
+    <style name="NavigationTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/orange_imdb</item>
+        <item name="colorPrimaryVariant">@color/gray_imdb</item>
+    </style>
 
 </resources>
