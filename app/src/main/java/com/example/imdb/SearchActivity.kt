@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.imdb.adapter.AdapterMovies
-import com.example.imdb.databinding.ActivityMainBinding
 import com.example.imdb.databinding.ActivitySearchBinding
 
 class SearchActivity : AppCompatActivity() {
@@ -16,6 +15,7 @@ class SearchActivity : AppCompatActivity() {
         binding = ActivitySearchBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initRecyclerView()
+
     }
 
     fun initRecyclerView(){

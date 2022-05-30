@@ -7,12 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.imdb.databinding.ActivityNavigationBinding
-import com.example.imdb.ui.search.MoviesList
-import com.example.imdb.ui.search.MoviesProvider
-import com.example.imdb.ui.search.adapter.MoviesAdapter
 
 class NavigationActivity : AppCompatActivity() {
 
