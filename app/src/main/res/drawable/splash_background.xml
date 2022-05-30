@@ -10,7 +10,7 @@
         android:top="260dp"
         android:bottom="260dp">
 
-        <bitmap android:src="@drawable/logo_imdb"></bitmap>
+        <bitmap android:src="@drawable/logo_imdb2"></bitmap>
 
     </item>
 

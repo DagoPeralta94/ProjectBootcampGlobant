@@ -19,7 +19,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginBottom="20dp"
             android:contentDescription="@string/logo_imdb_description"
-            android:src="@drawable/logo_imdb" />
+            android:src="@drawable/logo_imdb2" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
