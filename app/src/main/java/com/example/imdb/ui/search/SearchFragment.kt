@@ -27,7 +27,7 @@ class SearchFragment : Fragment() {
     ) : View {
 
         val dashboardViewModel =
-            ViewModelProvider(this).get(SearchViewModel::class.java)
+            ViewModelProvider(this)[SearchViewModel::class.java]
 
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
