@@ -8,17 +8,17 @@
         />
     <item
         android:id="@+id/search2"
-        android:title="Home"
+        android:title="Search"
         android:icon="@drawable/ic_baseline_search_24"
         />
     <item
         android:id="@+id/play2"
-        android:title="Home"
+        android:title="Play"
         android:icon="@drawable/ic_baseline_play_arrow_24"
         />
     <item
         android:id="@+id/profile2"
-        android:title="Home"
+        android:title="Profile"
         android:icon="@drawable/ic_baseline_person_24"
         />
 
