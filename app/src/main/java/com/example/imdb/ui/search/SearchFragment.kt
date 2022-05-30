@@ -22,18 +22,12 @@ class SearchFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-    fun initRecyclerView(){
-        binding.recView.layoutManager = StaggeredGridLayoutManager(3, LinearLayoutManager.HORIZONTAL)
-        binding.recView.adapter = MoviesAdapter(MoviesProvider.moviesList)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ) : View {
-
-        initRecyclerView()
 
         val dashboardViewModel =
             ViewModelProvider(this).get(SearchViewModel::class.java)
