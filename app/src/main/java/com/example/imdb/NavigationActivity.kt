@@ -20,9 +20,6 @@ class NavigationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // initReciclerView()
-
         binding = ActivityNavigationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
