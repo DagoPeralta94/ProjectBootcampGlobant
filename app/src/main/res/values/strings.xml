@@ -17,7 +17,7 @@
     <string name="email_in_layout">Correo electrónico</string>
     <string name="password_in_layout">Contraseña</string>
     <string name="btn_acept">Aceptar</string>
-    <string name="txt_password_required">La contraseña debe contener 8 caracteres*</string>
+    <string name="txt_password_required">La contraseña debe tener 8 caracteres*</string>
     <string name="logo_imdb_description">Logo IMDb</string>
     <string name="title_profile">Perfil</string>
 </resources>
