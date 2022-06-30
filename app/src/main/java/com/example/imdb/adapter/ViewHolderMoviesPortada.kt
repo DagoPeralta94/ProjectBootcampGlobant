@@ -11,9 +11,11 @@ class ViewHolderMoviesPortada(view: View) : RecyclerView.ViewHolder(view) {
     val binding = ItemPortadaMovieBinding.bind(view)
 
     fun render (listModelPortada: ModelDataPortadaMovies){
-        with(binding){
-            Glide.with(ivPortadaFragment.context).load(listModelPortada.urlPhotoPortadaFragment).into(ivPortadaFragment)
-            Glide.with(ivPortadaHomeMovie.context).load(listModelPortada.urlPhotoPortadaMovie).into(ivPortadaHomeMovie)
+        with(binding) {
+            Glide.with(ivPortadaFragment.context).load(listModelPortada.urlPhotoPortadaFragment)
+                .into(ivPortadaFragment)
+            Glide.with(ivPortadaHomeMovie.context).load(listModelPortada.urlPhotoPortadaMovie)
+                .into(ivPortadaHomeMovie)
             txTitleMoviePortada.text = listModelPortada.titleMoviePortada
             txDescriptionMoviePortada.text = listModelPortada.descriptionMoviePortada
         }

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.imdb.adapter.AdapterBestMovies
 import com.example.imdb.adapter.AdapterMoviesPortada
 import com.example.imdb.databinding.ActivityHomeDashboardBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -49,6 +50,9 @@ class HomeDashboard : AppCompatActivity() {
     private fun initRecyclerView() {
         binding.rvPortadaMovie.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         binding.rvPortadaMovie.adapter = AdapterMoviesPortada(MoviesPortadaProvider.moviesListPortada)
+
+        binding.rvBestSelections.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        binding.rvBestSelections.adapter = AdapterBestMovies(MoviesBestProvider.moviesListBest)
     }
 
     override fun onStop() {
