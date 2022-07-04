@@ -17,16 +17,16 @@
         android:theme="@style/Theme.IMDb"
         tools:targetApi="31">
         <activity
-            android:name=".ProfileDashboard"
+            android:name=".ui.search.view.ProfileDashboard"
             android:exported="false" />
         <activity
-            android:name=".PlayDashboard"
+            android:name=".ui.search.view.PlayDashboard"
             android:exported="false" />
         <activity
-            android:name=".HomeDashboard"
+            android:name=".ui.search.view.HomeDashboard"
             android:exported="false" />
         <activity
-            android:name=".SearchActivity"
+            android:name=".ui.search.view.SearchActivity"
             android:exported="false" />
         <activity
             android:name=".NavigationActivity"
@@ -34,11 +34,11 @@
             android:label="@string/title_activity_navigation"
             android:theme="@style/NavigationTheme" />
         <activity
-            android:name=".Register"
+            android:name=".ui.search.view.Register"
             android:exported="false"
             android:theme="@style/RegisterTheme" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".core.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -48,7 +48,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.search.view.MainActivity"
             android:exported="true" />
     </application>
 

@@ -1,4 +1,6 @@
-package com.example.imdb
+package com.example.imdb.data
+
+import com.example.imdb.core.ModelDataBestMovies
 
 class MoviesBestProvider {
     companion object {

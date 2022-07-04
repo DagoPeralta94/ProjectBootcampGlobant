@@ -1,9 +1,9 @@
-package com.example.imdb.adapter
+package com.example.imdb.core.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.imdb.ModelDataBestMovies
+import com.example.imdb.core.ModelDataBestMovies
 import com.example.imdb.R
 
 class AdapterBestMovies(val moviesBestList: List<ModelDataBestMovies>) : RecyclerView.Adapter<ViewHolderBestMovies>() {

@@ -1,6 +1,6 @@
-package com.example.imdb
+package com.example.imdb.data
 
-import com.example.imdb.ui.search.MoviesList
+import com.example.imdb.core.ModelDataClass
 
 class MoviesProvider2 {
     companion object {

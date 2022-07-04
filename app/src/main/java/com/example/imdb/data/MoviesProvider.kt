@@ -1,4 +1,6 @@
-package com.example.imdb.ui.search
+package com.example.imdb.data
+
+import com.example.imdb.ui.search.MoviesList
 
 class MoviesProvider {
     companion object {

@@ -1,9 +1,9 @@
-package com.example.imdb.adapter
+package com.example.imdb.core.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.imdb.ModelDataPortadaMovies
+import com.example.imdb.core.ModelDataPortadaMovies
 import com.example.imdb.R
 
 class AdapterMoviesPortada(private val listPortadaMovie: List<ModelDataPortadaMovies>) : RecyclerView.Adapter<ViewHolderMoviesPortada>() {

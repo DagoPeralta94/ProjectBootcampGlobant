@@ -1,11 +1,11 @@
-package com.example.imdb.adapter
+package com.example.imdb.core.adapter
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.imdb.ModelDataClass
+import com.example.imdb.core.ModelDataClass
 import com.example.imdb.R
 
 class ViewHolderMovies(view: View) : RecyclerView.ViewHolder(view){

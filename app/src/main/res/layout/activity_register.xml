@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:orientation="vertical"
-        tools:context=".Register">
+        tools:context=".ui.search.view.Register">
 
         <ImageView
             android:layout_width="130dp"

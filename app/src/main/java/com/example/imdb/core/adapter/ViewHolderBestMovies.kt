@@ -1,9 +1,9 @@
-package com.example.imdb.adapter
+package com.example.imdb.core.adapter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.imdb.ModelDataBestMovies
+import com.example.imdb.core.ModelDataBestMovies
 import com.example.imdb.databinding.ItemMoviesBestSelectedBinding
 
 class ViewHolderBestMovies(view: View) : RecyclerView.ViewHolder(view) {

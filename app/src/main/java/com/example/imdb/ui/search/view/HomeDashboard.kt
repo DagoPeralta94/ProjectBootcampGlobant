@@ -1,11 +1,14 @@
-package com.example.imdb
+package com.example.imdb.ui.search.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.imdb.adapter.AdapterBestMovies
-import com.example.imdb.adapter.AdapterMoviesPortada
+import com.example.imdb.R
+import com.example.imdb.core.adapter.AdapterBestMovies
+import com.example.imdb.core.adapter.AdapterMoviesPortada
+import com.example.imdb.data.MoviesBestProvider
+import com.example.imdb.data.MoviesPortadaProvider
 import com.example.imdb.databinding.ActivityHomeDashboardBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 

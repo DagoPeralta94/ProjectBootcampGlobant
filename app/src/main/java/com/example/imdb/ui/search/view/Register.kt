@@ -1,7 +1,8 @@
-package com.example.imdb
+package com.example.imdb.ui.search.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.imdb.R
 
 class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.imdb
+package com.example.imdb.core
 
 data class ModelDataBestMovies(
     val urlPhotoBestMovies: String,
