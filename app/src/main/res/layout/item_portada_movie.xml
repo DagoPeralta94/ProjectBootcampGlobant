@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_play_circle_outline_24" />
+        android:src="@drawable/ic_play_circle_outline_24" />
 
     <ImageView
         android:id="@+id/ivPortadaFragment"
