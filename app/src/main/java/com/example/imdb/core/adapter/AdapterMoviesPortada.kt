@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.imdb.core.ModelDataPortadaMovies
 import com.example.imdb.R
+import com.example.imdb.core.holder.ViewHolderMoviesPortada
 
 class AdapterMoviesPortada(private val listPortadaMovie: List<ModelDataPortadaMovies>) : RecyclerView.Adapter<ViewHolderMoviesPortada>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderMoviesPortada {

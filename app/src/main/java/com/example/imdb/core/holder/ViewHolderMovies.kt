@@ -1,4 +1,4 @@
-package com.example.imdb.core.adapter
+package com.example.imdb.core.holder
 
 import android.view.View
 import android.widget.ImageView

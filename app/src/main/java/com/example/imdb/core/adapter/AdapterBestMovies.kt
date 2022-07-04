@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.imdb.core.ModelDataBestMovies
 import com.example.imdb.R
+import com.example.imdb.core.holder.ViewHolderBestMovies
 
 class AdapterBestMovies(val moviesBestList: List<ModelDataBestMovies>) : RecyclerView.Adapter<ViewHolderBestMovies>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderBestMovies {
