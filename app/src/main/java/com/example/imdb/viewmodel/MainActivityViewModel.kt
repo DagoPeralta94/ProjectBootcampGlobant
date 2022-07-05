@@ -5,16 +5,19 @@ import androidx.lifecycle.ViewModel
 
 class MainActivityViewModel : ViewModel() {
 
-    val txtInformation : MutableLiveData<String> = MutableLiveData()
+    val txtUserVM : MutableLiveData<String> = MutableLiveData()
+    val txtPasswordVM : MutableLiveData<String> = MutableLiveData()
 
     fun getCurrentInformation(){
-        txtInformation
+        txtUserVM
+        txtPasswordVM
     }
 
     fun getTxtInformation(
         nameLogin: String,
         passwordLogin: String
     ){
-        txtInformation.value = "El usuario es $nameLogin y la contraseña es $passwordLogin"
+        txtUserVM.value = "Hola ${nameLogin}"
+        txtPasswordVM.value = "Tu contra es ${passwordLogin}"
     }
 }

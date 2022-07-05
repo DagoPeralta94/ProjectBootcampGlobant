@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
         viewModel.getCurrentInformation()
-        //saveInformatio()
+        saveInformation()
 
         binding.txtRegister.setOnClickListener { goingToRegister() }
         binding.login1.setOnClickListener { goingToNavigation() }
@@ -38,16 +38,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun saveInformatio() {
+    private fun saveInformation() {
         with(binding) {
-            login1.setOnClickListener {
                 viewModel.getTxtInformation(
                     "${txtUser.editText?.text}",
                     "${txtPassword.editText?.text}"
                 )
             }
-        }
-        viewModel.txtInformation.observe(this, Observer {
+        viewModel.txtUserVM.observe(this, Observer {
             binding.txtInformation.text = it
         })
     }
