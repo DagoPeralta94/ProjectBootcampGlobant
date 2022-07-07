@@ -4,10 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.get
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.imdb.data.UserLogin
 import com.example.imdb.data.UserProvider
 import com.example.imdb.databinding.ActivityMainBinding
 import com.example.imdb.viewmodel.MainActivityViewModel
@@ -52,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun goingToRegister() {
 
-        val intent = Intent(this, Register::class.java).apply {
+        val intent = Intent(this, RegisterActivity::class.java).apply {
         }
         startActivity(intent)
 
@@ -70,11 +68,12 @@ class MainActivity : AppCompatActivity() {
             val passw1 = UserProvider.userList[i].password
 
             if (user0 == user1 && passw1 == passw0) {
-                val intent = Intent(this, HomeDashboard::class.java).apply {
+                val intent = Intent(this, HomeDashboardActivity::class.java).apply {
                 }
                 startActivity(intent)
                 break
             } else {
+                Toast.makeText(this, "Usuario Incorrecto", Toast.LENGTH_SHORT).show()
                 i += 1
             }
         }

@@ -12,7 +12,7 @@ import com.example.imdb.data.MoviesPortadaProvider
 import com.example.imdb.databinding.ActivityHomeDashboardBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class HomeDashboard : AppCompatActivity() {
+class HomeDashboardActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeDashboardBinding
 
@@ -34,12 +34,12 @@ class HomeDashboard : AppCompatActivity() {
                     }
                     R.id.home2 -> return@OnNavigationItemSelectedListener true
                     R.id.play2 -> {
-                        startActivity(Intent(applicationContext, PlayDashboard::class.java))
+                        startActivity(Intent(applicationContext, PlayDashboardActivity::class.java))
                         overridePendingTransition(0, 0)
                         return@OnNavigationItemSelectedListener true
                     }
                     R.id.profile2 -> {
-                        startActivity(Intent(applicationContext, ProfileDashboard::class.java))
+                        startActivity(Intent(applicationContext, ProfileDashboardActivity::class.java))
                         overridePendingTransition(0, 0)
                         return@OnNavigationItemSelectedListener true
                     }

@@ -29,18 +29,18 @@ class SearchActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.play2 -> {
-                    startActivity(Intent(applicationContext, PlayDashboard::class.java))
+                    startActivity(Intent(applicationContext, PlayDashboardActivity::class.java))
                     overridePendingTransition(0,0)
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.search2 -> return@OnNavigationItemSelectedListener true
                 R.id.home2 -> {
-                    startActivity(Intent(applicationContext, HomeDashboard::class.java))
+                    startActivity(Intent(applicationContext, HomeDashboardActivity::class.java))
                     overridePendingTransition(0,0)
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.profile2 -> {
-                    startActivity(Intent(applicationContext, ProfileDashboard::class.java))
+                    startActivity(Intent(applicationContext, ProfileDashboardActivity::class.java))
                     overridePendingTransition(0,0)
                     return@OnNavigationItemSelectedListener true
                 }
