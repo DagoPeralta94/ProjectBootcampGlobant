@@ -60,6 +60,6 @@ class HomeDashboard : AppCompatActivity() {
 
     override fun onStop() {
         super.onStop()
-        finish()
+        //finish()
     }
 }
