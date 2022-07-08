@@ -3,13 +3,21 @@ package com.example.imdb.ui.search.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.imdb.R
+import com.example.imdb.core.adapter.AdapterBestMovies
+import com.example.imdb.data.MoviesBestProvider
+import com.example.imdb.databinding.ActivityProfileDashboardBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ProfileDashboardActivity : AppCompatActivity() {
+
+    private lateinit var binding : ActivityProfileDashboardBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile_dashboard)
+        binding = ActivityProfileDashboardBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.botton_navigation)
 
@@ -36,7 +44,16 @@ class ProfileDashboardActivity : AppCompatActivity() {
             }
             false
         })
+
+        initRecyclerView()
+
     }
+
+    private fun initRecyclerView() {
+        binding.rcProfileList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        binding.rcProfileList.adapter = AdapterBestMovies(MoviesBestProvider.moviesListBest)
+    }
+
     override fun onStop() {
         super.onStop()
         finish()

@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_play_circle_outline_24" />
+        android:src="@drawable/ic_play_circle_outline_24" />
 
     <TextView
         android:id="@+id/txt_name_profile"
@@ -27,7 +27,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/photo_profile"
         app:layout_constraintStart_toEndOf="@+id/photo_profile"
         app:layout_constraintTop_toTopOf="@id/photo_profile"
-        tools:text="Dago Peralta" />
+        android:text="Dago Peralta" />
 
     <ImageView
         android:id="@+id/ivConfig"
