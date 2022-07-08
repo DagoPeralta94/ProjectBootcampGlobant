@@ -10,6 +10,10 @@ class UserProvider {
             UserLogin(
                 "Diego",
                 "diego123"
+            ),
+            UserLogin(
+                "a",
+                "a"
             )
         )
     }

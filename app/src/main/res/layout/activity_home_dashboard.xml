@@ -5,10 +5,11 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraintLayoutId"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".ui.search.view.HomeDashboardActivity">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -34,26 +35,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/botton_navigation"
             app:layout_constraintTop_toBottomOf="@+id/tvBestSelect" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="HOME" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/botton_navigation"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/orange_imdb"
             app:itemIconTint="@drawable/selector"
             app:itemTextColor="@drawable/selector"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvBestSelections"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayoutId"
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/menu" />
 
